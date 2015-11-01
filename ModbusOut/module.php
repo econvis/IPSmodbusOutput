@@ -24,10 +24,26 @@
         }
         
         // Überschreibt die intere IPS_ApplyChanges($id) Funktion
-        public function ApplyChanges() {
-            // Diese Zeile nicht löschen
-            parent::ApplyChanges();
-        }
+    		public function ApplyChanges()
+		{
+			//Never delete this line!
+			parent::ApplyChanges();
+			
+			
+			$this->RegisterVariableBoolean("power", "Status", "~Switch");
+			$this->EnableAction("power");
+      
+			$this->RegisterVariableInteger("messagetype", "Nachrichtentyp", "MessageType.E2");
+			$this->EnableAction("messagetype");
+			$this->RegisterVariableString("message", "Nachricht", "~TextBox");
+			$this->EnableAction("message");
+			
+			$this->RegisterVariableString("program", "Programm", "~String");
+			$this->RegisterVariableString("show", "Sendung", "~String");
+			$this->RegisterVariableString("description", "Beschreibung", "~TextBox");
+			
+			$this->RegisterScript("update", "Aktualisieren", "<?\n\nE2_RequestUpdate(IPS_GetParent(\$_IPS['SELF']));\n\n?>", 0);
+		}
  
         /**
         * Die folgenden Funktionen stehen automatisch zur Verfügung, wenn das Modul über die "Module Control" eingefügt wurden.
