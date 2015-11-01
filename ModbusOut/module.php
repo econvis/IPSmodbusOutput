@@ -32,7 +32,7 @@
 			
 			$this->RegisterVariableBoolean("power", "Status", "~Switch");
 			$this->EnableAction("power");
-      
+
 			$this->RegisterVariableString("message", "Nachricht", "~TextBox");
 			$this->EnableAction("message");
 			
@@ -40,7 +40,8 @@
 			$this->RegisterVariableString("show", "Sendung", "~String");
 			$this->RegisterVariableString("description", "Beschreibung", "~TextBox");
 			
-			//$this->RegisterScript("update", "Aktualisieren", "<?\n\nE2_RequestUpdate(IPS_GetParent(\$_IPS['SELF']));\n\n?>", 0);
+			/*$this->RegisterScript("update", "Aktualisieren", "<?\n\nE2_RequestUpdate(IPS_GetParent(\$_IPS['SELF']));\n\n?>", 0);
+			 */
 		}
  
         /**
