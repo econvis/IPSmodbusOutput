@@ -1,0 +1,15 @@
+{
+    "id": "{6C336C68-3DCC-4619-B07D-566872C199C9}",
+    "name": "Modbus Output",
+    "type": 3,
+    "vendor": "econvis",
+    "aliases":
+    [
+        "Name1UnterstütztesGerät",
+        "Name2UnterstütztesGerät"
+    ],  
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "ABC"
+}
