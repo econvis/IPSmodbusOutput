@@ -1,6 +1,6 @@
 {
     "id": "{6C336C68-3DCC-4619-B07D-566872C199C9}",
-    "name": "Modbus Output",
+    "name": "ModbusOutput",
     "type": 3,
     "vendor": "econvis",
     "aliases":
