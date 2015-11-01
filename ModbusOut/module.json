@@ -5,8 +5,7 @@
     "vendor": "econvis",
     "aliases":
     [
-        "Name1UnterstütztesGerät",
-        "Name2UnterstütztesGerät"
+        "Modus Ausgang (hand 0 auto)"
     ],  
     "parentRequirements": [],
     "childRequirements": [],
